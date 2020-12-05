@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-Conflict offline content
-=======
 Conflict online content
->>>>>>> bd19f468b5e306f22f8f432dfd3273f1d7c832dd
