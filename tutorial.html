@@ -338,28 +338,28 @@
                               <br>
                               <img src="images/Image 027.png" class="image_center" style="height:80%;width:80%">
                               <br>
-                              <li class="list">Step 3: Type in the console git pull and enter. After you press Enter, the interface will change and show 4 options: “Accept Current Change”, “Accept Incoming Change”, “Accept Both Changes” and “Compare Changes”</li>
+                              <li class="list">Step 3: Type in the console <code>git pull</code> and press <kbd>Enter</kbd>. After you press <kbd>Enter</kbd>, the interface will change and show 4 options: “Accept Current Change”, “Accept Incoming Change”, “Accept Both Changes” and “Compare Changes”</li>
                               <br>
                               <img src="images/Image 021.png" class="image_center" style="height:80%;width:80%">
                               <br>
 
                               <p class="simple_text"><strong>If you want to use the local content:</strong></p>
-                              <li class="list">Step 4: Click on Accept Current Change, and press Ctrl + S to save</li>
-                              <li class="list">Step 5: Repeat Step 1 and Step 2, then type in git push and press Enter. This will push the local file to the remote repo and replace the file on it</li>
+                              <li class="list">Step 4: Click on Accept Current Change, and press <kbd>Ctrl + S</kbd> to save</li>
+                              <li class="list">Step 5: Repeat Step 1 and Step 2, then type in <code>git push</code> and press <kbd>Enter</kbd>. This will push the local file to the remote repo and replace the file on it</li>
                               <br>
                               <img src="images/Image 023.png" class="image_center" style="height:80%;width:80%">
                               <br>
 
                               <p class="simple_text"><strong>If you want to use the online content:</strong></p>
-                              <li class="list">Step 4: Click on Accept Incoming Change, and press Ctrl + S to save</li>
-                              <li class="list">Step 5: Press Ctrl + S to save the online content to your local file, repeat Step 1 and Step 2, then type in the console “git push” and press Enter</li>
+                              <li class="list">Step 4: Click on Accept Incoming Change, and press <kbd>Ctrl + S</kbd> to save the remote content to your local file</li>
+                              <li class="list">Step 5: Repeat Step 1 and Step 2, then type in the console <code>git push</code> and press <kbd>Enter</kbd></li>
                               <br>
                               <img src="images/Image 024.png" class="image_center" style="height:80%;width:80%">
                               <br>
 
                               <p class="simple_text"><strong>If you want to accept both content (combined content):</strong></p>
-                              <li class="list">Step 4: Click on Accept Both Changes, and press Ctrl + S to save the combined content to your local file</li>
-                              <li class="list">Step 5: Repeat Step 1 and Step 2, then type in git push and press Enter. This will push the combined file to the remote repo and replace the file on it</li>
+                              <li class="list">Step 4: Click on Accept Both Changes, and press <kbd>Ctrl + S</kbd> to save the combined content to your local file</li>
+                              <li class="list">Step 5: Repeat Step 1 and Step 2, then type in <code>git push</code> and press <kbd>Enter</kbd>. This will push the combined file to the remote repo and replace the file on it</li>
                               <br>
                               <img src="images/Image 028.png" 
                               class="image_center" style="height:80%;width:80%">
@@ -369,24 +369,53 @@
                               <p class="simple_text"><strong>After having practised this more and more, you will be able to resolve conflicts like a pro!</strong></p>
 
                           <h5 class="tutorial_subtitle_2nd_biggest" id="4.4 Branching">4.4 Branching</h5>
-                              <div style="height:50px;"></div>
-                              <a href="https://git-scm.com/" target="_blank"><img src="images/Git.png" class="image_center" style="width:300px;height:300px;"></a>
-                              <div style="height:50px;"></div>
-                              <p class="simple_text">Next, we will install Git and assign VS Code as Git’s default editor</p>
-                              <li class="list">Step 1: Go to <a href="https://git-scm.com/download" target="_blank">https://git-scm.com/download</a>, select your OS and download Git</li>
+                          <p class="simple_text">Branching is a very useful utility on GitHub that allows users to expand upon their current projects (i.e. adding new feature) without tampering with the main source code. For example, if you already have a fully functional project on the <strong>main branch</strong>, but want to safely code and add a new feature to the project without touching the existing code, branching will be your saviour. In essence, branching will create a complete duplicate of everything from the <strong>main branch</strong>, which would allow you to work on the new feature completely isolated from the original code.
+                          </p>
+                          <br>
+                          <p class="simple_text"><strong>Branch creation</strong>
+                          </p>
+                          <p class="simple_text">To create a new branch, type in <code>git branch [branch name]</code> and press <kbd>Enter</kbd>. A branch with all your files duplicated has been created. However, this branch is only created locally.
+                          </p>
+                          <br>
+                              <img src="images/Image 030.png" class="image_center" style="height:80%;width:80%">
                               <br>
-                              <img src="/images/Screenshot_2020-12-06 Git - Downloads.png" class="image_center" style="height:80%;width:80%">
+                          <p class="simple_text">To push this branch to your remote repo, type in <code>git push --set-upstream origin [branch name]</code> and press <kbd>Enter</kbd>
+                            </p>
+                            <br>
+                              <img src="images/Image 031.png" class="image_center" style="height:80%;width:80%">
                               <br>
-                              <li class="list">Step 2: Open the downloaded setup file, click next until you see the “Choosing the default editor used by Git” tab. Click on the drop-down menu and choose “Use Visual Studio Code as Git’s default editor”</li>
-                              <br>
-                              <img src="/images/Git 1.png" class="image_center">
-                              <img src="/images/Git 2.png" class="image_center">
-                              <br>            
-                              <li class="list">After that, spam on the “next” button until you finish installing Git</li>
-                              <br>
-                              <img src="/images/Git 3.png" class="image_center">
-                              <br>
-                              <p class="simple_text">Git is now successfully installed! We have finished setting up, now we can get to the part where we use Git.</p>
+                          <img src="images/Git-Architechture-Git-Tutorial-Edureka-2.png" class="image_center" style="height:80%;width:80%">
+                          <br>
+                          <p class="simple_text">Let's try to put this to practice:</p>
+                          <li class="list">Step 1: First, let’s create a file called FirstFile.txt. Click on the name of your repo on the column on the left and expand it, then click on the first icon next to the name to create a new file. Name the file FirstFile.txt</li>
+                          <br>
+                          <img src="images/Image 008.png" class="image_center" style="height:80%;width:80%">
+                          <br>
+                          <li class="list">Step 2: Type in some content to the file as you wish, then press <kbd>Ctrl + S</kbd> to save the file. See that white dot next to the FirstFile.txt tab? That means the file isn't saved yet. After saving, the dot will disappear</li>
+                          <br>
+                          <img src="images/Image 009.png" class="image_center" style="height:80%;width:80%">
+                          <br>
+                          <p class="simple_text">Next, we will upload this file to the online GitHub repo:</p>
+                          <li class="list">Step 1: Open the terminal with Ctrl + Shift + `</li>
+                          <br>
+                          <img src="images/Image 010.png" class="image_center" style="height:80%;width:80%">
+                          <br>
+                          <li class="list">Step 2: Type in <code>git add .</code> (This will add every single file in your folder) or <code>git add “File Name”</code> with the bracket (This will only add a single file) and press <kbd>Enter</kbd></li>
+                          <li class="list">Step 3: Type in <code>git commit -m “[Your comment]”</code> with the bracket (This is to help you remember what changes” and press <kbd>Enter</kbd></li>
+                          <br>
+                          <img src="images/Image 012.png" class="image_center" style="height:80%;width:80%">
+                          <br>
+                          <li class="list">Step 4: Type in <code>git push</code> (This will upload your file(s) to the remote repo) and press <kbd>Enter</kbd></li>
+                          <li class="list">Step 5: Since this is your first time pushing, a window will pop-up prompting you to “Sign in with your browser”. Click on the prompt.</li>
+                          <li class="list">Step 6: Once the website loads, click on Authorize “GitCredentialManager”</li>
+                          <br>
+                          <img src="images/Image 011.png" class="image_center" style="height:80%;width:80%">
+                          <br>
+                          <li class="list">Step 7: Now if you go back to VS Code, you will see that your git push command has been successfully ran</li>
+                          <br>
+                          <img src="images/Image 013.png" class="image_center" style="height:80%;width:80%">
+                          <br>
+                          <p class="simple_text">And voila! The file is now uploaded to your repo. You can check by going to https://github.com/[your GitHub user name]/[your repo]</p>
 
 
                               
