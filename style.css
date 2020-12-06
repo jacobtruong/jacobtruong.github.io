@@ -1128,99 +1128,7 @@ footer
 
 
 
-/* SINGLE PORTFOLIO PAGE */
 
-#portfolio-1
-{
-    background-color: #221c5a;
-    background-image:url("demo-images/background_img_05b.jpg"); 
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: auto; 
-}
-
-#portfolio-2
-{
-
-    background-color: #221c5a;
-    background-image: url(demo-images/item_background_01.jpg);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 100% auto;
-}
-    
-.single-portfolio .menu-wrapper
-{
-    display: none !important;
-}
-
-.single-portfolio article
-{
-    padding-top: 230px;
-}
-
-.single-portfolio article .entry-content
-{
-    background-color: #fff;
-    padding-bottom: 50px;
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.single-portfolio .x-close
-{
-    top: -60px;
-    right: -60px;
-    background-color: #26276d;
-    line-height: 0;
-    font-size: 0;
-    width: 60px;
-    height: 60px
-}
-
-.single-portfolio .x-close img
-{
-    opacity: 0.4;
-    transition: opacity .2s linear;
-    width: 30px;
-    height: 30px;
-    padding-top: 15px;
-    padding-left: 15px;
-}
-
-.single-portfolio .x-close:hover img
-{
-    opacity: 1;
-}
-
-.single-portfolio .entry-content .one
-{
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.single-portfolio .entry-content .one_half
-{
-    width: 435px;
-    padding-left: 100px;
-}
-
-.single-portfolio .entry-content .one_half.last
-{
-    padding-left: 50px;
-    padding-right: 50px;
-    width: fit-content;
-    text-align: center;
-}
-
-.single-portfolio .entry-content h1 
-{
-    padding: 0;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-/* END SINGLE PORTFOLIO */
 
 
 /* RESPONSIVE PART */
@@ -1776,15 +1684,19 @@ footer
         margin-right: auto;
 }
 
-.code
-{
-    font-size: 20px;
-    color: white;
-    background-color:#2b2b2b;
-    
+code {
+    border: 1px solid #dadada;
+    color: #ff6a00;
+    padding: 3px;
 }
 
-
+kbd {
+    padding: .2rem .4rem;
+    font-size: 20px;
+    color: #fff;
+    background-color: #212529;
+    border-radius: .2rem;
+}
 
 
 
@@ -1814,3 +1726,97 @@ footer
 #toc_container li, #toc_container ul, #toc_container ul li{
     list-style: outside none none !important;
 }
+
+/* SINGLE PORTFOLIO PAGE */
+
+#portfolio-1
+{
+    background-color: #221c5a;
+    background-image:url("demo-images/background_img_05b.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto; 
+}
+
+#portfolio-2
+{
+
+    background-color: #221c5a;
+    background-image: url(demo-images/item_background_01.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% auto;
+}
+    
+.single-portfolio .menu-wrapper
+{
+    display: none !important;
+}
+
+.single-portfolio article
+{
+    padding-top: 230px;
+}
+
+.single-portfolio article .entry-content
+{
+    background-color: #fff;
+    padding-bottom: 50px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.single-portfolio .x-close
+{
+    top: -60px;
+    right: -60px;
+    background-color: #26276d;
+    line-height: 0;
+    font-size: 0;
+    width: 60px;
+    height: 60px
+}
+
+.single-portfolio .x-close img
+{
+    opacity: 0.4;
+    transition: opacity .2s linear;
+    width: 30px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.single-portfolio .x-close:hover img
+{
+    opacity: 1;
+}
+
+.single-portfolio .entry-content .one
+{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.single-portfolio .entry-content .one_half
+{
+    width: 435px;
+    padding-left: 100px;
+}
+
+.single-portfolio .entry-content .one_half.last
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: fit-content;
+    text-align: center;
+}
+
+.single-portfolio .entry-content h1 
+{
+    padding: 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* END SINGLE PORTFOLIO */
