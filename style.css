@@ -1773,7 +1773,13 @@ footer
         margin-right: auto;
 }
 
-
+.code
+{
+    font-size: 20px;
+    color: white;
+    background-color:#2b2b2b;
+    
+}
 
 
 
