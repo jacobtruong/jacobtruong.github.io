@@ -44,7 +44,7 @@ body a:hover
 
 .content-1170
 {
-    width: 1170px;    
+    width: 1500px;    
 }
 
 .content-1170 img
@@ -1207,8 +1207,10 @@ footer
 
 .single-portfolio .entry-content .one_half.last
 {
-    padding-left: 0;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: fit-content;
+    text-align: center;
 }
 
 .single-portfolio .entry-content h1 
@@ -1724,4 +1726,68 @@ footer
     {
         top: -84px;
     }
+}
+
+/* Tutorial */
+.tutorial_title
+{font-family: Roboto;
+ font-size: 60px;
+ text-align: center;
+}
+
+.tutorial_subtitle_biggest
+{
+    font-size: 30px;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.tutorial_subtitle_2nd_biggest
+{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.simple_text
+{
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 70px
+}
+
+
+
+
+
+
+
+
+
+
+
+.title_description
+{font-family: Roboto;
+    font-size: 20px;
+    text-align: center;
+   }
+
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
 }
