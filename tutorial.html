@@ -100,7 +100,8 @@
                                 <ul>
                                     <li style="text-indent:10px"><a href="#4.1 Configuring Git and cloning your remote Repo">4.1 Configuring Git and cloning your remote Repo</a></li>
                                     <li style="text-indent:10px"><a href="#4.2 Using basic git commands: add, commit, push">4.2 Using basic git commands: add, commit, push</a></li>
-                                    <li style="text-indent:10px"><a href="#3.3 Installing Git">3.3 Installing Git</a></li>
+                                    <li style="text-indent:10px"><a href="#4.3 Resolving conflicts">4.3 Resolving conflicts</a></li>
+                                    <li style="text-indent:10px"><a href="#4.4 Branching">4.4 Branching</a></li>
                                   </ul>
                             </li>
                             </ul>
@@ -317,31 +318,57 @@
 
 
 
+                      <h5 class="tutorial_subtitle_2nd_biggest" id="4.3 Resolving conflicts">4.3 Resolving conflicts</h5>
+                            <p class="simple_text">When you are working with many collaborators, file conflicts might arise. These conflicts happen when the file version on the repo is different from the one you are having on your local machine. For example, let’s say on your Repo, there is already a file called “conflict.txt” uploaded by another collaborator.</p>
+                            <br>
+                            <img src="images/Image 015.png" class="image_center" style="height:80%;width:80%">
+                            <img src="images/Image 016.png" class="image_center" style="height:80%;width:80%">
+                            <br>
+                            <p class="simple_text">At the same time, on your local machine, you also have a “conflict.txt” file with your local content on it.</p>
+                            <br>
+                            <img src="images/Image 017.png" class="image_center" style="height:80%;width:80%">
+                            <br>
+                            <p class="simple_text"> If you try to push your local file, an error will occur like the image below</p>
+                            <img src="images/Image 026.png" class="image_center" style="height:80%;width:80%">
+                            <br>
+                            <p class="simple_text">To resolve such conflicts, we have to review the content of both local and remote version to determine which version of the file to keep, by using <code>git add</code>, <code>git commit</code>, <code>git pull</code> and <code>git push</code> command</p>
 
-
-
-
-
-
-
-                      <h5 class="tutorial_subtitle_2nd_biggest" id="4.2 Using basic git commands: add, commit, push">4.2 Using basic git commands: add, commit, push</h5>
-                              <div style="height:50px;"></div>
-                              <a href="https://code.visualstudio.com" target="_blank"><img src="images/VS Code.png" class="image_center" style="width:300px;height:300px;"></a>
-                              <div style="height:50px;"></div>
-                              <p class="simple_text">While Git can be used on its own, it is recommended to use an IDE to optimise your workflow. Git supports an impressive number of IDEs, but in this tutorial, we will use Visual Studio Code, an IDE that is incredibly lightweight considering the features it has. Follow the instructions to download and install VS Code:</p>
-                              <li class="list">Step 1: Go to <a href="https://code.visualstudio.com/download" target="_blank">https://code.visualstudio.com/download</a>, select your OS and download VS Code</li>
+                              <li class="list">Step 1: Type in the console <code>git add .</code> and press <kbd>Enter</kbd></li>
+                              <li class="list">Step 2: Type in the console <code>git commit -m "[Your message]"</code> and press <kbd>Enter</kbd></li>
                               <br>
-                              <img src="images/Screenshot_2020-12-06 Download Visual Studio Code - Mac, Linux, Windows.png" class="image_center" style="height:80%;width:80%">
+                              <img src="images/Image 027.png" class="image_center" style="height:80%;width:80%">
                               <br>
-                              <li class="list">Step 2: Open the downloaded setup file, install with default settings (spam the "Next" button).</li>
+                              <li class="list">Step 3: Type in the console git pull and enter. After you press Enter, the interface will change and show 4 options: “Accept Current Change”, “Accept Incoming Change”, “Accept Both Changes” and “Compare Changes”</li>
                               <br>
-                              <img src="images/1.png" class="image_center">
-                              <img src="images/2.png" class="image_center">
+                              <img src="images/Image 021.png" class="image_center" style="height:80%;width:80%">
                               <br>
-                              <p class="simple_text">Just like that and VS Code should be successfully installed afterwards! Now we can move on to the next section.</p>
 
+                              <p class="simple_text"><strong>If you want to use the local content:</strong></p>
+                              <li class="list">Step 4: Click on Accept Current Change, and press Ctrl + S to save</li>
+                              <li class="list">Step 5: Repeat Step 1 and Step 2, then type in git push and press Enter. This will push the local file to the remote repo and replace the file on it</li>
+                              <br>
+                              <img src="images/Image 023.png" class="image_center" style="height:80%;width:80%">
+                              <br>
 
-                          <h5 class="tutorial_subtitle_2nd_biggest" id="3.3 Installing Git">3.3 Installing Git</h5>
+                              <p class="simple_text"><strong>If you want to use the online content:</strong></p>
+                              <li class="list">Step 4: Click on Accept Incoming Change, and press Ctrl + S to save</li>
+                              <li class="list">Step 5: Press Ctrl + S to save the online content to your local file, repeat Step 1 and Step 2, then type in the console “git push” and press Enter</li>
+                              <br>
+                              <img src="images/Image 024.png" class="image_center" style="height:80%;width:80%">
+                              <br>
+
+                              <p class="simple_text"><strong>If you want to accept both content (combined content):</strong></p>
+                              <li class="list">Step 4: Click on Accept Both Changes, and press Ctrl + S to save the combined content to your local file</li>
+                              <li class="list">Step 5: Repeat Step 1 and Step 2, then type in git push and press Enter. This will push the combined file to the remote repo and replace the file on it</li>
+                              <br>
+                              <img src="images/Image 028.png" 
+                              class="image_center" style="height:80%;width:80%">
+                              <img src="images/Image 029.png" 
+                              class="image_center" style="height:80%;width:80%">
+                              <br>
+                              <p class="simple_text"><strong>After having practised this more and more, you will be able to resolve conflicts like a pro!</strong></p>
+
+                          <h5 class="tutorial_subtitle_2nd_biggest" id="4.4 Branching">4.4 Branching</h5>
                               <div style="height:50px;"></div>
                               <a href="https://git-scm.com/" target="_blank"><img src="images/Git.png" class="image_center" style="width:300px;height:300px;"></a>
                               <div style="height:50px;"></div>
