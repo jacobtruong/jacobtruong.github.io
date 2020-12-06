@@ -1757,6 +1757,15 @@ footer
     padding-right: 70px
 }
 
+.list
+{
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+
 .image_center
 {
         display: block;
