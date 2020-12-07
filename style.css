@@ -1638,14 +1638,14 @@ footer
 
 /* Tutorial */
 .tutorial_title
-{font-family: Roboto;
+{font-family: 'Roboto', sans-serif;
  font-size: 60px;
  text-align: center;
 }
 
 .tutorial_subtitle_biggest
 {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     text-align: left;
     padding-left: 70px;
