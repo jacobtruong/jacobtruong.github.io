@@ -1653,7 +1653,7 @@ footer
 
 .tutorial_subtitle_2nd_biggest
 {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     text-align: left;
     padding-left: 70px;
@@ -1661,7 +1661,7 @@ footer
 
 .simple_text
 {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     text-align: justify;
     padding-left: 70px;
