@@ -1661,7 +1661,8 @@ footer
 
 .simple_text
 {
-        font-size: 20px;
+    font-family: Roboto;
+    font-size: 20px;
     text-align: justify;
     padding-left: 70px;
     padding-right: 70px
